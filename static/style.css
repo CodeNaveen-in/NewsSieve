@@ -7,28 +7,92 @@ body{
 button{
     color: #eeeeee;
     background-color: #d84040;
-    padding: 8px 10px;
+    padding: 8px 20px;
     border: none;
     border-radius: 4px;
+    font-size: 1.3rem;
+}
+
+button:hover{
+    background-color: #c03939;
 }
 .NavBar{
-    display: grid;
+    display: flex;
     grid-template-columns: 3fr 6fr 3fr;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     padding: 8px;
 }
 
 .NavButton a{
     color: #D84040;
-    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 20px;
 
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+.HeroContent{
+    padding: 20px 15vw;
+}
+.HeroContent p{
+    font-size: 1.2rem;
+}
+
+.HeroSerachbar{
+    margin: 10px;
+}
+
+input{
+    padding: 8px 3vw;
+    border: 2px solid #8E1616;
+    font-size: 1.3rem;
+    border-radius: 4px;    
 }
 .HeroMain{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
 }
 
 .HeroMain h3{
     grid-column: 1/-1;
+}
+
+.Card {
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(216, 64, 64, 0.2); /* Drop shadow */
+    overflow: hidden; /* Ensure content doesn't spill out of the border radius */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    max-width: 300px; /* Optional: Limit card width */
+}
+
+.Card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgb(216, 64, 64); /* Stronger shadow on hover */
+}
+
+.Card image{
+    height: 200px;
+    width: 400px;
+}
+
+h5{
+    font-size: 2rem;
+}
+
+.Card p{
+    font-size: 1.2rem;
+    color: #eeeeee;
 }
 .Feature_section {
     display: grid;
