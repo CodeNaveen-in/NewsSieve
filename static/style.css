@@ -16,6 +16,34 @@ button{
 button:hover{
     background-color: #c03939;
 }
+
+button img{
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.Second {
+    background-color: #1D1616;
+    font-size: 1.2rem;
+}
+
+.Second:hover{
+    background-color: rgba(29, 22, 22, 02);
+}
+
+.Third {
+    background-color: transparent;
+    color: #1D1616;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+.Third:hover {
+    background-color: #312f2f;
+    color: #eeeeee;
+}
 .NavBar{
     display: flex;
     grid-template-columns: 3fr 6fr 3fr;
@@ -52,9 +80,9 @@ h3{
 }
 
 input{
-    padding: 8px 3vw;
+    padding: 10px 10px;
     border: 2px solid #8E1616;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border-radius: 4px;    
 }
 .HeroMain{
@@ -94,23 +122,50 @@ h5{
     font-size: 1.2rem;
     color: #eeeeee;
 }
+
+.Card h5,
+.Card p {
+  display: -webkit-box; /* Enable multi-line truncation for WebKit browsers */
+  display: box; /* Add standard property as fallback */
+  -webkit-line-clamp: 2; /* Limit to 2 lines in WebKit browsers */
+  line-clamp: 2; /* Standardized property for future compatibility */
+  -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+  box-orient: vertical; /* Standardized property as fallback */
+  overflow: hidden; /* Hide the overflowing text */
+  text-overflow: ellipsis; /* Add an ellipsis (...) for overflow */
+  word-wrap: break-word; /* Break long words if necessary */
+}
+
 .Feature_section {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
+    padding: 20px;
+    text-align: left;
+    gap: 20px;
 }
 
 .Feature_section h3:first-of-type {
     grid-column: 1 / -1; /* Make the first h3 span all columns */
   }
 
+.Feature_section h5{
+    color: #D84040;
+}
 .CTA_section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: left;
 }
 
+.Mid_CTA_Pic img{
+    height: 25vw;
+    width: 40vw;
+}
 .Testi_section{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
 }
 
 .Testi_section>h3 {
@@ -119,15 +174,42 @@ h5{
 
 .Testi_section>p {
     grid-column: 1/-1;
+    font-size: 3rem;
+}
+
+.Testimonials{
+    border: 1px solid #8E1616;
+    box-shadow: 0 4px 8px #8E1616;
+    text-align: left;
+    padding: 0px 30px;
+}
+
+.Comment p{
+    font-size: 2rem;
+}
+
+.user_info_card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.USer_company_logo img{
+    vertical-align: bottom;
 }
 
 footer{
     display: grid;
     grid-template-columns: 3fr 4fr;
+    gap: 20px;
     border: 1px solid black;
     text-align: left;
+    padding: 40px;
 }
 
+footer input{
+    padding: 5px 8px;
+    font-size: 1rem;
+}
 .footer_links{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,4 +217,9 @@ footer{
 
 .footer_links a {
     display: block;
+    margin-bottom: 10px;
+}
+
+.footer_links div {
+    gap: 20px;
 }

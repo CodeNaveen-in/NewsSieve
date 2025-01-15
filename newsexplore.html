@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Explore</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./static/style.css">
 </head>
 <body>
     <header class="NavBar">
@@ -12,7 +12,7 @@
             NewsSieve
         </div>
         <div class="NavButton">
-            <a href="./index.html">Home News</a>
+            <a href="./templates/index.html">Home News</a>
             <a href="./categories.html">Categories</a>
             <a href="./newsexplore.html">More News</a>
         </div>
@@ -20,6 +20,40 @@
             <button>Send my News</button>
         </div>
     </header>
+    <div class="HeroMain">
+        <h3>Trending News</h3>
+        <div class="Card">
+            <img src="{{info_list[0][4]}}" alt="">
+            <h5>{{info_list[0][0]}}</h5>
+            <p>{{info_list[0][3]}}</p>
+        </div>
+        <div class="Card">
+            <img src="{{info_list[1][4]}}" alt="">
+            <h5>{{info_list[1][0]}}</h5>
+            <p>{{info_list[1][3]}}</p>
+        </div>
+        <div class="Card">
+            <img src="{{info_list[2][4]}}" alt="">
+            <h5>{{info_list[2][0]}}</h5>
+            <p>{{info_list[2][3]}}</p>
+        </div>
+        <div class="Card">
+            <img src="{{info_list[0][4]}}" alt="">
+            <h5>{{info_list[0][0]}}</h5>
+            <p>{{info_list[0][3]}}</p>
+        </div>
+        <div class="Card">
+            <img src="{{info_list[1][4]}}" alt="">
+            <h5>{{info_list[1][0]}}</h5>
+            <p>{{info_list[1][3]}}</p>
+        </div>
+        <div class="Card">
+            <img src="{{info_list[2][4]}}" alt="">
+            <h5>{{info_list[2][0]}}</h5>
+            <p>{{info_list[2][3]}}</p>
+        </div>
+    </div>
+
     <footer>
         <div class="footer_CTA">
             <div class="Logo2">

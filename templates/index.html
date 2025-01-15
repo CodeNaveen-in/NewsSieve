@@ -13,8 +13,8 @@
         </div>
         <div class="NavButton">
             <a href="./index.html">Home News</a>
-            <a href="./categories.html">Categories</a>
-            <a href="./newsexplore.html">More News</a>
+            <a href="../categories.html">Categories</a>
+            <a href="../newsexplore.html">More News</a>
         </div>
         <div class="NavCTA">
             <button>Send my News</button>
@@ -28,24 +28,26 @@
             <div class="HeroSerachbar">
                 <form action="">
                     <input type="text" placeholder="Choose your topic">
-                    <button>Search my news</button>
+                    <button>
+                        Search my news 
+                        <img src="../static/images/Icons/right-arrow.png" alt=""></button>
                 </form>
             </div>
         </div>
         <div class="HeroMain">
             <h3>Trending News</h3>
             <div class="Card">
-                <img src="{{info_list[0][4]}}" alt="" height="200px" width="200px">
+                <img src="{{info_list[0][4]}}" alt="">
                 <h5>{{info_list[0][0]}}</h5>
                 <p>{{info_list[0][3]}}</p>
             </div>
             <div class="Card">
-                <img src="{{info_list[1][4]}}" alt="" height="200px" width="200px">
+                <img src="{{info_list[1][4]}}" alt="">
                 <h5>{{info_list[1][0]}}</h5>
                 <p>{{info_list[1][3]}}</p>
             </div>
             <div class="Card">
-                <img src="{{info_list[2][4]}}" alt="" height="200px" width="200px">
+                <img src="{{info_list[2][4]}}" alt="">
                 <h5>{{info_list[2][0]}}</h5>
                 <p>{{info_list[2][3]}}</p>
             </div>
@@ -55,19 +57,19 @@
     <section class="Feature_section">
         <h3>Stay Updated with teh latest trends in news without any hassle</h3>
         <div>
-            <h3>Explore news categories and find what matters most to you</h3>
+            <h5>Explore news categories for you</h5>
             <p>Access trending news effortlessly, with no login required for browsing</p>
-            <button>Browse trending</button>
+            <button class="Third">Browse trending <img src="../static/images/Icons/right-arrow.png" alt=""></button>
         </div>
         <div>
-            <h3>Get the top news delivered straight to your inbox</h3>
+            <h5>Get the top news in inbox</h5>
             <p>Sign up with your email to recieve personalised news updates </p>
-            <button>Send me news</button>
+            <button class="Third">Send me news <img src="../static/images/Icons/right-arrow.png" alt=""></button>
         </div>
         <div>
-            <h3>Discover upcoming news and stay ahead of the curve</h3>
+            <h5>Discover ahead of the curve</h5>
             <p>Stay informed about the latest developments in your favourite categories</p>
-            <button>Latest news</button>
+            <button class="Third">Latest news <img src="../static/images/Icons/right-arrow.png" alt=""></button>
         </div>
     </section>
     
@@ -76,10 +78,10 @@
             <h3>Discover News Your Way</h3>
             <p>Experience teh latest news tailored to your interest without any hassle. Dive in now and explore a world of information at your fingertips</p>
             <button>Show me News</button>
-            <button>Learn more</button>
+            <button class="Third">Learn more</button>
         </div>
         <div class="Mid_CTA_Pic">
-            <div style="height: 200px; width: 400px; background-color: grey; text-align: center;"> Illustration</div>
+            <img src="../static/images/Extra Images/undraw_news_nz1p.svg" alt="">
         </div>
     </section>
     
@@ -95,12 +97,13 @@
             </div>
             <div class="user_info_card">
                 <div class="userpic">
-                User Pic</div>
-                <div class="user_name">
-                    <p>Jane Doe</p>
-                    <h6>Editor, News Daily</h6>
+                <img src="../static/images/Extra Images/Profile-1.png" alt="">
+                <p>Jane Doe</p>
+                <p>Editor, News Daily</p>
                 </div>
-                <div class="USer_company_logo">USercompany logo</div>
+                <div class="USer_company_logo">
+                    <img src="../static/images/Logo/logos_netflix.png" alt="">
+                </div>
             </div>
         </div>
         <div class="Testimonials">
@@ -111,13 +114,14 @@
                 <p>"This newsletter is one game changer of my routine"</p>
             </div>
             <div class="user_info_card">
-                <div class="userpic">
-                User Pic</div>
-                <div class="user_name">
-                    <p>John Smith</p>
-                    <h6>Manager, Infohub</h6>
+                <div>
+                <img src="../static/images/Extra Images/Profile.png" alt="">
+                <p>John Smith</p>
+                <p>Manager, Infohub</p>
                 </div>
-                <div class="USer_company_logo">USercompany logo</div>
+                <div class="USer_company_logo">
+                    <img src="../static/images/Logo/simple-icons_cocacola.png" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -125,13 +129,15 @@
     <footer>
         <div class="footer_CTA">
             <div class="Logo2">
-                LOGO
+                <img src="../static/images/Logo/Second Logo.svg" alt="">
             </div>
             <div class="CTA_content">
                 <p>Stay informed with our latest features and updates</p>
                 <div class="Cta_button">
+                    <form action="">
                     <input type="email" name="" id="" placeholder="Add your email to the list of spam free users">
-                    <button>Join</button>
+                    <button class="Second">Join</button>
+                    </form>
                 </div>
                 <p>By joining you consent to our Privacy Policy and recieve updates</p>
             </div>
@@ -139,17 +145,17 @@
         <div class="footer_links">
             <div>
                 <h5>Quick Links</h5>
-                <a href="">About us</a>
-                <a href="">Get Started</a>
-                <a href="">Contact Us</a>
+                <a href="../aboutus.html"class = "Third">About us</a>
+                <a href="../aboutus.html"class = "Third">Get Started</a>
+                <a href="../contactus.html"class = "Third">Contact Us</a>
             </div>
             <div>
                 <h5>Connect with us</h5>
-                <a href="">Facebook</a>
-                <a href="">Instagram</a>
-                <a href="">X</a>
-                <a href="">Linkedin</a>
-                <a href="">YouTube</a>
+                <a href=""class = "Third">Facebook</a>
+                <a href=""class = "Third">Instagram</a>
+                <a href=""class = "Third">X</a>
+                <a href=""class = "Third">Linkedin</a>
+                <a href=""class = "Third">YouTube</a>
 
             </div>
         </div>
