@@ -1,0 +1,60 @@
+/* Primary color : 1D1616, Secondary color : 8E1616, Accent color : D84040, Accent 2:  EEEEEE*/
+body{
+    padding: 0vw 12vw;
+    text-align: center;
+}
+.NavBar{
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+}
+
+.HeroMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.HeroMain h3{
+    grid-column: 1/-1;
+}
+.Feature_section {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+.Feature_section h3:first-of-type {
+    grid-column: 1 / -1; /* Make the first h3 span all columns */
+  }
+
+.CTA_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Testi_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Testi_section>h3 {
+    grid-column: 1/-1;
+}
+
+.Testi_section>p {
+    grid-column: 1/-1;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.footer_links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer_links a {
+    display: block;
+}
