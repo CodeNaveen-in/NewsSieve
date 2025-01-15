@@ -3,11 +3,25 @@ body{
     padding: 0vw 12vw;
     text-align: center;
 }
+
+button{
+    color: #eeeeee;
+    background-color: #d84040;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+}
 .NavBar{
     display: grid;
     grid-template-columns: 3fr 6fr 3fr;
+    padding: 8px;
 }
 
+.NavButton a{
+    color: #D84040;
+    font-size: 1.2rem;
+
+}
 .HeroMain{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
