@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Categories</title>
+    <title>News Explore</title>
     <link rel="stylesheet" href="./static/style.css">
 </head>
 <body>
@@ -12,17 +12,26 @@
             NewsSieve
         </div>
         <div class="NavButton">
-            <a href="./templates/index.html">Home News</a>
-            <a href="./categories.html">Categories</a>
-            <a href="./newsexplore.html">More News</a>
+            <a href="{{url_for('index')}}">Home News</a>
+            <a href="{{url_for('categories')}}">Categories</a>
+            <a href="{{url_for('morenews')}}">More News</a>
         </div>
         <div class="NavCTA">
             <button>Send my News</button>
         </div>
     </header>
-    <div>Contact Us</div>
-    <div></div>
-    <div></div>
+    <div class="HeroMain">
+        <h3>Trending News</h3>
+        {% for info in info_list %}
+        <div class="Card">
+            <img src="{{ info[4] }}" alt="">
+            <h5>{{ info[0] }}</h5>
+            <p>{{ info[3] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+
     <footer>
         <div class="footer_CTA">
             <div class="Logo2">
