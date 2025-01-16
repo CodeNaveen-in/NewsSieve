@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Explore</title>
-    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
     <header class="NavBar">
@@ -14,7 +14,7 @@
         <div class="NavButton">
             <a href="{{url_for('index')}}">Home News</a>
             <a href="{{url_for('categories')}}">Categories</a>
-            <a href="{{url_for('morenews')}}">More News</a>
+            <a href="">More News</a>
         </div>
         <div class="NavCTA">
             <button>Send my News</button>
@@ -23,11 +23,13 @@
     <div class="HeroMain">
         <h3>Trending News</h3>
         {% for info in info_list %}
-        <div class="Card">
-            <img src="{{ info[4] }}" alt="">
-            <h5>{{ info[0] }}</h5>
-            <p>{{ info[3] }}</p>
-        </div>
+        <a href="{{info[1]}}">
+            <div class="Card">
+                <img src="{{ info[4] }}" alt="">
+                <h5>{{ info[0] }}</h5>
+                <p>{{ info[3] }}</p>
+            </div>
+        </a>
         {% endfor %}
     </div>
 

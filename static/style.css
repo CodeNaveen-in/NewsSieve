@@ -120,10 +120,9 @@ h5{
 
 .Card p{
     font-size: 1.2rem;
-    color: #eeeeee;
 }
 
-.Card h5,
+a .Card h5,
 .Card p {
   display: -webkit-box; /* Enable multi-line truncation for WebKit browsers */
   display: box; /* Add standard property as fallback */
@@ -134,6 +133,8 @@ h5{
   overflow: hidden; /* Hide the overflowing text */
   text-overflow: ellipsis; /* Add an ellipsis (...) for overflow */
   word-wrap: break-word; /* Break long words if necessary */
+  color: #1D1616;
+  text-decoration: none;
 }
 
 .Feature_section {
