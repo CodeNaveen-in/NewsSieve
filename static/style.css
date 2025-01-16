@@ -15,6 +15,7 @@ button{
 
 button:hover{
     background-color: #c03939;
+    transform: scale(1.05);
 }
 
 button img{
@@ -77,6 +78,71 @@ h3{
 
 .HeroSerachbar{
     margin: 10px;
+}
+
+/* Categories Dropdown Styling */
+.NewsDropdown {
+    width: 100%;
+    max-width: 320px; /* Set an appropriate width for dropdown */
+    padding: 12px; /* Add inner spacing */
+    font-size: 1rem; /* Use a readable font size */
+    color: #1a1a1a; /* Primary text color */
+    background-color: #ffffff; /* Neutral background for dropdown */
+    border: 2px solid #ccc; /* Subtle border */
+    border-radius: 6px; /* Smooth corners */
+    font-family: 'Arial', sans-serif; /* Match branding font */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light drop shadow for elevation */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
+    margin-bottom: 15px; /* Add space below */
+    appearance: none; /* Remove default browser styles */
+}
+
+.NewsDropdown:hover {
+    border-color: #b73928; /* Change border on hover (primary color) */
+    box-shadow: 0px 6px 10px rgba(0, 123, 255, 0.2); /* Glow effect */
+}
+
+.NewsDropdown:focus {
+    border-color: #f27223; /* Highlight border on focus */
+    box-shadow: 0px 6px 10px rgba(179, 75, 0, 0.3); /* Subtle glow */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Dropdown Arrow Styling */
+.NewsDropdown::after {
+    content: "▼"; /* Add a custom dropdown arrow */
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1a1a1a;
+    font-size: 0.9rem;
+}
+
+/* Search Container Styling */
+.SearchContainer {
+    display: flex;
+    flex-direction: column; /* Stack dropdown and input vertically */
+    gap: 10px; /* Add spacing between elements */
+    align-items: center; /* Align to the left */
+}
+
+/* General Button Styling for Consistency */
+.HeroSerachbar button {
+    color: #fff; /* White text for contrast */
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; /* Branding font */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover animations */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.HeroSerachbar button:hover {
+    background-color: #8E1616; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
 input{
@@ -179,9 +245,14 @@ h5{
 
 .Testimonials{
     border: 1px solid #8E1616;
-    box-shadow: 0 4px 8px #8E1616;
+
     text-align: left;
     padding: 0px 30px;
+}
+
+.Testimonials:hover{
+    transform: scaleY(1.05);
+    box-shadow: 0 4px 8px #8E1616;
 }
 
 .Comment p{
