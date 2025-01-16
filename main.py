@@ -75,6 +75,14 @@ def morenews():
         print(f"Error: {response.status_code}, {response.text}")
     return render_template("newsexplore.html", info_list=info_list)
 
+@app.route("/aboutus")
+def aboutus():
+    return render_template("aboutus.html")
+
+@app.route("/contactus")
+def contactus():
+    return render_template("contactus.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
 
