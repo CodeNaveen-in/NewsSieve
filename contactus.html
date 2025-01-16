@@ -22,7 +22,26 @@
     </header>
 
     <h1>Contact Us</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum temporibus eius, quod cumque id assumenda, unde saepe doloremque facilis fugiat itaque tempore ex eveniet accusantium eaque nostrum officia nisi placeat.</p>
+
+    <!-- New Form -->
+    <form class="subscribe-form" action="/submit-news-preferences" method="POST">
+        <h2>Subscribe to News Updates</h2>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="categories">Select News Categories</label>
+        <select id="categories" name="categories[]" multiple required>
+            <option value="technology">Technology</option>
+            <option value="business">Business</option>
+            <option value="sports">Sports</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="health">Health</option>
+            <option value="science">Science</option>
+            <option value="world">World News</option>
+        </select>
+
+        <button type="submit">Subscribe</button>
+    </form>
 
     <footer>
         <div class="footer_CTA">
@@ -35,7 +54,7 @@
                     <input type="email" name="" id="" placeholder="Add your email to the list of spam free users">
                     <button>Join</button>
                 </div>
-                <p>By joining you consent to our Privacy Policy and recieve updates</p>
+                <p>By joining you consent to our Privacy Policy and receive updates</p>
             </div>
         </div>
         <div class="footer_links">
@@ -52,7 +71,6 @@
                 <a href="">X</a>
                 <a href="">Linkedin</a>
                 <a href="">YouTube</a>
-
             </div>
         </div>
     </footer>

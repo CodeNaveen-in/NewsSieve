@@ -109,9 +109,9 @@ input{
     box-shadow: 0 8px 16px rgb(216, 64, 64); /* Stronger shadow on hover */
 }
 
-.Card image{
+.Card img{
     height: 200px;
-    width: 400px;
+    width: auto;
 }
 
 h5{
@@ -196,6 +196,97 @@ h5{
 .USer_company_logo img{
     vertical-align: bottom;
 }
+
+/* Styling for the subscribe form */
+.subscribe-form {
+    background-color: #ffffff; /* White background for clarity */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow for elevation */
+    padding: 20px; /* Inner padding for spacing */
+    width: 100%;
+    max-width: 400px; /* Limit width for better design */
+    margin: 20px auto; /* Center form horizontally */
+    font-family: 'Arial', sans-serif; /* Brand-consistent font */
+    color: #333; /* Neutral text color */
+  }
+  
+  /* Form title */
+  .subscribe-form h2 {
+    font-size: 1.5rem; /* Larger heading for emphasis */
+    color: #8E1616; /* Primary brand color */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form labels */
+  .subscribe-form label {
+    font-size: 1rem; /* Standard readable font size */
+    color: #555; /* Neutral color for labels */
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input fields */
+  .subscribe-form input[type="email"],
+  .subscribe-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    color: #333;
+  }
+  
+  /* Placeholder text */
+  .subscribe-form input::placeholder {
+    color: #aaa; /* Lighter placeholder text */
+  }
+  
+  /* Dropdown (select) styling */
+  .subscribe-form select {
+    background-color: #f9f9f9; /* Light background */
+    color: #333;
+    font-family: inherit; /* Consistent font */
+  }
+  
+  /* Submit button */
+  .subscribe-form button {
+    background-color: #D84040; /* Primary brand color */
+    color: #ffffff; /* White text for contrast */
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width button */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for the button */
+  .subscribe-form button:hover {
+    background-color: #0056b3; /* Darker shade of the primary color */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .subscribe-form {
+      padding: 15px;
+    }
+  
+    .subscribe-form h2 {
+      font-size: 1.3rem;
+    }
+  
+    .subscribe-form button {
+      font-size: 0.9rem;
+    }
+  }
+  
 
 footer{
     display: grid;
