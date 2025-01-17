@@ -14,7 +14,7 @@
         <div class="NavButton">
             <a href="{{url_for('index')}}">Home News</a>
             <a href="{{url_for('categories')}}">Categories</a>
-            <a href="{{url_for('morenews')}}">More News</a>
+            <a href="{{url_for('morenews', category='topstories')}}">More News</a>
         </div>
         <div class="NavCTA">
             <button>Send my News</button>
@@ -41,7 +41,7 @@
             <div>
                 <h5>Quick Links</h5>
                 <a href="{{url_for('aboutus')}}">About us</a>
-                <a href="">Get Started</a>
+                <a href="{{url_for('index')}}">Get Started</a>
                 <a href="{{url_for('contactus')}}">Contact Us</a>
             </div>
             <div>

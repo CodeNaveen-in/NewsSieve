@@ -13,7 +13,7 @@
         </div>
         <div class="NavButton">
             <a href="{{url_for('index')}}">Home News</a>
-            <a href="{{url_for('categories')}}">Categories</a>
+            <a href="{{url_for('categories', category='topstories')}}">Categories</a>
             <a href="">More News</a>
         </div>
         <div class="NavCTA">
@@ -21,7 +21,7 @@
         </div>
     </header>
     <div class="HeroMain">
-        <h3>Trending News</h3>
+        <h3>{{page_title}}</h3>
         {% for info in info_list %}
         <a href="{{info[1]}}">
             <div class="Card">
